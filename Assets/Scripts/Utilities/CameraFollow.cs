@@ -1,10 +1,7 @@
 namespace Dreamteck.Forever
 {
-    using System.Collections;
-    using System.Collections.Generic;
     using UnityEngine;
     using Dreamteck.Splines;
-    using System;
 
     public class CameraFollow : MonoBehaviour
     {
@@ -20,8 +17,6 @@ namespace Dreamteck.Forever
         {
             trs = transform;
         }
-
-
 
         void LateUpdate()
         {

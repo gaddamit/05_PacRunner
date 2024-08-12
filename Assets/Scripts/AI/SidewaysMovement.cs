@@ -5,7 +5,7 @@ using DG.Tweening;
 public class SidewaysMovement : MonoBehaviour
 {
     [SerializeField]
-    private bool isMovingRight = true;
+    private bool _isMovingRight = true;
     [SerializeField]
     private float _xPosition = 3;
     [SerializeField]
@@ -18,7 +18,7 @@ public class SidewaysMovement : MonoBehaviour
     {
         // Move the ghost sideways
         float z = transform.localPosition.z;
-        transform.DOLocalMove(new Vector3(isMovingRight ? _xPosition : -_xPosition, 2, z), _speed).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+        transform.DOLocalMove(new Vector3(_isMovingRight ? _xPosition : -_xPosition, 2, z), _speed).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
 
         InvokeRepeating("RotateGhost", 0, _speed);
     }
@@ -26,15 +26,15 @@ public class SidewaysMovement : MonoBehaviour
     // Face the ghost in the direction it is moving
     private void RotateGhost()
     {
-        if (isMovingRight)
+        if (_isMovingRight)
         {
             transform.localRotation = Quaternion.Euler(0, 90, 0);
-            isMovingRight = false;
+            _isMovingRight = false;
         }
         else
         {
             transform.localRotation = Quaternion.Euler(0, -90, 0);
-            isMovingRight = true;
+            _isMovingRight = true;
         }
     }
 

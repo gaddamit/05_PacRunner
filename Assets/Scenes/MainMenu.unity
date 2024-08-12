@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 245074983}
   - component: {fileID: 245074982}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: Moustache
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -467,11 +467,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2100672652}
+  m_Father: {fileID: 1209148244}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.157}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 196.2, y: 32.8}
+  m_AnchoredPosition: {x: -100.39998, y: 14.300007}
   m_SizeDelta: {x: 190.0975, y: 176.6333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &245074982
@@ -1157,7 +1157,7 @@ GameObject:
   - component: {fileID: 1209148246}
   - component: {fileID: 1209148245}
   m_Layer: 0
-  m_Name: Image
+  m_Name: PacMan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1174,7 +1174,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 245074981}
   m_Father: {fileID: 2100672652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1864,7 +1865,6 @@ RectTransform:
   m_Children:
   - {fileID: 1727276139}
   - {fileID: 1209148244}
-  - {fileID: 245074981}
   - {fileID: 2094565907}
   - {fileID: 999715971}
   - {fileID: 1622500900}

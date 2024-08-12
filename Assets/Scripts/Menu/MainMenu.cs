@@ -6,17 +6,17 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private Button playButton;
-    [SerializeField] private Button quitButton;
+    [SerializeField] private Button _playButton;
+    [SerializeField] private Button _quitButton;
 
     public void Awake()
     {
-        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = true;
 
 #if UNITY_WEBGL
         // Quit Button removed for WebGL build
-        quitButton.gameObject.SetActive(false);
+        _quitButton.gameObject.SetActive(false);
 #endif
     }
 

@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    LaneRunner runner;
+    private LaneRunner _runner;
     public static Player instance;
     private Rigidbody _rigidBody;
     private bool _isJumping = false;
@@ -12,9 +12,9 @@ public class Player : MonoBehaviour
     private bool _isDead = false;
     private Animator _animator;
     
-    float speed = 0f;
-    float startSpeed = 0f;
     [Header("Speed Settings")]
+    private float _speed = 0f;
+    private float _startSpeed = 0f;
     [SerializeField]
     private float _speedCap = 50;
     [SerializeField]
@@ -29,8 +29,8 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        runner = GetComponent<LaneRunner>();
-        startSpeed = speed = runner.followSpeed;
+        _runner = GetComponent<LaneRunner>();
+        _startSpeed = _speed = _runner.followSpeed;
         instance = this;
 
         _rigidBody = GetComponent<Rigidbody>();
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     void OnRestart()
     {
         LevelGenerator.instance.Restart();
-        runner.followSpeed = speed = startSpeed;
+        _runner.followSpeed = _speed = _startSpeed;
     }
 
     private void Update()
@@ -51,8 +51,8 @@ public class Player : MonoBehaviour
         }
 
         // Lane switching logic
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) runner.lane--;
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) runner.lane++;
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) _runner.lane--;
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) _runner.lane++;
     }
 
     private void FixedUpdate()
@@ -66,21 +66,21 @@ public class Player : MonoBehaviour
 
     public void SetSpeed(float speed)
     {
-        this.speed = speed;
-        runner.followSpeed = speed;
+        this._speed = speed;
+        _runner.followSpeed = speed;
     }
 
     public float GetSpeed()
     {
-        return speed;
+        return _speed;
     }
 
     // Increase the player speed, called by the GameManager when scores hits a mark
     public void IncreaseSpeed()
     {
-        if(speed < _speedCap)
+        if(_speed < _speedCap)
         {
-            SetSpeed(speed + _speedIncrement);
+            SetSpeed(_speed + _speedIncrement);
         }
     }
 
