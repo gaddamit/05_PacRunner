@@ -100,8 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12d1fc966f3977542a40c259eee7d8eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMovingRight: 0
+  _isMovingRight: 0
+  _xPosition: 3
   _speed: 1
+  _shouldDieOnCollision: 1
 --- !u!65 &4194880534265763819
 BoxCollider:
   m_ObjectHideFlags: 0

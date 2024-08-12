@@ -7,7 +7,8 @@ using UnityEngine.Events;
 public class Collectable : MonoBehaviour
 {
     public UnityEvent OnCollectableCollectedEvent;
-    [SerializeField] private AudioClip collectableSound;
+    [SerializeField]
+    private AudioClip _collectableSound;
 
     // Handle the collection of the collectable through trigger collision
     protected virtual void OnTriggerEnter(Collider other)
@@ -22,6 +23,6 @@ public class Collectable : MonoBehaviour
 
     protected virtual void PlaySoundEffect()
     {
-        AudioManager.Instance.PlaySoundEffect(collectableSound);
+        AudioManager.Instance.PlaySoundEffect(_collectableSound);
     }
 }

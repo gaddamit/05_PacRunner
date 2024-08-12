@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
 
     public void Awake()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
 #if UNITY_WEBGL

@@ -6,7 +6,7 @@ using DG.Tweening;
 public class RandomJumping : MonoBehaviour
 {
     [SerializeField]
-    private bool isMovingRight = true;
+    private bool _isMovingRight = true;
     [SerializeField]
     private float _speed = 2;
     [SerializeField]
