@@ -1,0 +1,539 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084b3ccb74b9f0a47b8c5c809ac9ee7f, type: 3}
+  m_Name: Level 1
+  m_EditorClassIdentifier: 
+  _enabled: 1
+  _pathGenerator: {fileID: 0}
+  _sequenceCollection:
+    sequences:
+    - enabled: 1
+      name: Sequence
+      isCustom: 0
+      customSequence: {fileID: 0}
+      segments:
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.3555556
+        _prefab: {fileID: 7971326914115165083, guid: f59443adf2da941baab7f5f59c39531c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111114
+        _prefab: {fileID: 7971326914115165083, guid: 8d790f576f0ca452e8341b0383b3b380, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.34444445
+        _prefab: {fileID: 7971326914115165083, guid: 875d48c16d60b4e4681f43fc7630e289, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.18888892
+        _prefab: {fileID: 7971326914115165083, guid: b93ba85897175499985ba5aae518c4b3, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.15555556
+        _prefab: {fileID: 7971326914115165083, guid: d8b2741c3069f443f8d754802210364c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.35555556
+        _prefab: {fileID: 7971326914115165083, guid: 7e1f82b2eb2ca4939aa21e1020cfd195, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: bea65f6f96b584e1995e2e7d93afa8af, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: f1e45cf87bf944a4086dc4414a2a0ca4, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: 9aaaba5f2aea6406085127c191c01fb4, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.23333336
+        _prefab: {fileID: 7971326914115165083, guid: 9f9e3ada8baee447d97cd2fd7af33adb, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111111
+        _prefab: {fileID: 7971326914115165083, guid: 78b7e0ccc45034883bfb77a3168f43ff, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.13333334
+        _prefab: {fileID: 7971326914115165083, guid: 77b7a9ae76a614f8bace15c3987a202a, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111111
+        _prefab: {fileID: 7971326914115165083, guid: b14878e6461fa4485b98454af8869970, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      customPathGenerator: {fileID: 0}
+      spawnCount: 5
+      type: 0
+      randomizer: {fileID: 11400000, guid: fb600be43607d7e47822c78754644d57, type: 2}
+      customShuffle: {fileID: 0}
+      preventRepeat: 0
+    - enabled: 1
+      name: Sequence
+      isCustom: 0
+      customSequence: {fileID: 0}
+      segments:
+      - nested: 0
+        randomPickChance: 0.5
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: 7e1f82b2eb2ca4939aa21e1020cfd195, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.25555557
+        _prefab: {fileID: 7971326914115165083, guid: 875d48c16d60b4e4681f43fc7630e289, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.23333338
+        _prefab: {fileID: 7971326914115165083, guid: f59443adf2da941baab7f5f59c39531c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.31111115
+        _prefab: {fileID: 7971326914115165083, guid: 8d790f576f0ca452e8341b0383b3b380, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.3777778
+        _prefab: {fileID: 7971326914115165083, guid: b93ba85897175499985ba5aae518c4b3, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.35555556
+        _prefab: {fileID: 7971326914115165083, guid: d8b2741c3069f443f8d754802210364c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: bea65f6f96b584e1995e2e7d93afa8af, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.15555558
+        _prefab: {fileID: 7971326914115165083, guid: f1e45cf87bf944a4086dc4414a2a0ca4, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.15555556
+        _prefab: {fileID: 7971326914115165083, guid: 9aaaba5f2aea6406085127c191c01fb4, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.17777781
+        _prefab: {fileID: 7971326914115165083, guid: 9f9e3ada8baee447d97cd2fd7af33adb, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.14444445
+        _prefab: {fileID: 7971326914115165083, guid: 78b7e0ccc45034883bfb77a3168f43ff, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.16666667
+        _prefab: {fileID: 7971326914115165083, guid: 9fd0b9ab0f6554feebecdc7c4ed28b09, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.13333334
+        _prefab: {fileID: 7971326914115165083, guid: 77b7a9ae76a614f8bace15c3987a202a, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.14444447
+        _prefab: {fileID: 7971326914115165083, guid: 1a79e9e820dbe4f4bb04a06e9ea994a6, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111111
+        _prefab: {fileID: 7971326914115165083, guid: b14878e6461fa4485b98454af8869970, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.16666667
+        _prefab: {fileID: 7971326914115165083, guid: 7e8882fe0898e43078667914f3dad05c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.11111112
+        _prefab: {fileID: 7971326914115165083, guid: cc8641b3e16834bf9a27d398d740e9ab, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.17777778
+        _prefab: {fileID: 7971326914115165083, guid: e98fe12a497094e1990921c3c73ed820, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.14444445
+        _prefab: {fileID: 7971326914115165083, guid: 72e0058a8b92b4ec689fdd7b064db12c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.24444446
+        _prefab: {fileID: 7971326914115165083, guid: b2eba6ba1199cb340bec3c930905e9de, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      customPathGenerator: {fileID: 0}
+      spawnCount: 0
+      type: 1
+      randomizer: {fileID: 11400000, guid: fb600be43607d7e47822c78754644d57, type: 2}
+      customShuffle: {fileID: 0}
+      preventRepeat: 0
+    sequencePositions:
+    - parent: -1
+      segmentIndex: -1
+    - parent: -1
+      segmentIndex: -1
+    allSequences:
+    - enabled: 1
+      name: Sequence
+      isCustom: 0
+      customSequence: {fileID: 0}
+      segments:
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 1
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.3555556
+        _prefab: {fileID: 7971326914115165083, guid: f59443adf2da941baab7f5f59c39531c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111114
+        _prefab: {fileID: 7971326914115165083, guid: 8d790f576f0ca452e8341b0383b3b380, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.34444445
+        _prefab: {fileID: 7971326914115165083, guid: 875d48c16d60b4e4681f43fc7630e289, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.18888892
+        _prefab: {fileID: 7971326914115165083, guid: b93ba85897175499985ba5aae518c4b3, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.15555556
+        _prefab: {fileID: 7971326914115165083, guid: d8b2741c3069f443f8d754802210364c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.35555556
+        _prefab: {fileID: 7971326914115165083, guid: 7e1f82b2eb2ca4939aa21e1020cfd195, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: bea65f6f96b584e1995e2e7d93afa8af, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: f1e45cf87bf944a4086dc4414a2a0ca4, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: 9aaaba5f2aea6406085127c191c01fb4, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.23333336
+        _prefab: {fileID: 7971326914115165083, guid: 9f9e3ada8baee447d97cd2fd7af33adb, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111111
+        _prefab: {fileID: 7971326914115165083, guid: 78b7e0ccc45034883bfb77a3168f43ff, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.13333334
+        _prefab: {fileID: 7971326914115165083, guid: 77b7a9ae76a614f8bace15c3987a202a, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111111
+        _prefab: {fileID: 7971326914115165083, guid: b14878e6461fa4485b98454af8869970, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      customPathGenerator: {fileID: 0}
+      spawnCount: 5
+      type: 0
+      randomizer: {fileID: 11400000, guid: fb600be43607d7e47822c78754644d57, type: 2}
+      customShuffle: {fileID: 0}
+      preventRepeat: 0
+    - enabled: 1
+      name: Sequence
+      isCustom: 0
+      customSequence: {fileID: 0}
+      segments:
+      - nested: 0
+        randomPickChance: 0.5
+        _prefab: {fileID: 7971326914115165083, guid: 6a87512bac46c49b29fbc66004dbeaf5, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: 7e1f82b2eb2ca4939aa21e1020cfd195, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.25555557
+        _prefab: {fileID: 7971326914115165083, guid: 875d48c16d60b4e4681f43fc7630e289, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.23333338
+        _prefab: {fileID: 7971326914115165083, guid: f59443adf2da941baab7f5f59c39531c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.31111115
+        _prefab: {fileID: 7971326914115165083, guid: 8d790f576f0ca452e8341b0383b3b380, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.3777778
+        _prefab: {fileID: 7971326914115165083, guid: b93ba85897175499985ba5aae518c4b3, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.35555556
+        _prefab: {fileID: 7971326914115165083, guid: d8b2741c3069f443f8d754802210364c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: bea65f6f96b584e1995e2e7d93afa8af, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.15555558
+        _prefab: {fileID: 7971326914115165083, guid: f1e45cf87bf944a4086dc4414a2a0ca4, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.15555556
+        _prefab: {fileID: 7971326914115165083, guid: 9aaaba5f2aea6406085127c191c01fb4, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.17777781
+        _prefab: {fileID: 7971326914115165083, guid: 9f9e3ada8baee447d97cd2fd7af33adb, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.14444445
+        _prefab: {fileID: 7971326914115165083, guid: 78b7e0ccc45034883bfb77a3168f43ff, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.16666667
+        _prefab: {fileID: 7971326914115165083, guid: 9fd0b9ab0f6554feebecdc7c4ed28b09, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.13333334
+        _prefab: {fileID: 7971326914115165083, guid: 77b7a9ae76a614f8bace15c3987a202a, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.14444447
+        _prefab: {fileID: 7971326914115165083, guid: 1a79e9e820dbe4f4bb04a06e9ea994a6, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111111
+        _prefab: {fileID: 7971326914115165083, guid: b14878e6461fa4485b98454af8869970, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.16666667
+        _prefab: {fileID: 7971326914115165083, guid: 7e8882fe0898e43078667914f3dad05c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.11111112
+        _prefab: {fileID: 7971326914115165083, guid: cc8641b3e16834bf9a27d398d740e9ab, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.17777778
+        _prefab: {fileID: 7971326914115165083, guid: e98fe12a497094e1990921c3c73ed820, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.14444445
+        _prefab: {fileID: 7971326914115165083, guid: 72e0058a8b92b4ec689fdd7b064db12c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.24444446
+        _prefab: {fileID: 7971326914115165083, guid: b2eba6ba1199cb340bec3c930905e9de, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      customPathGenerator: {fileID: 0}
+      spawnCount: 0
+      type: 1
+      randomizer: {fileID: 11400000, guid: fb600be43607d7e47822c78754644d57, type: 2}
+      customShuffle: {fileID: 0}
+      preventRepeat: 0
+  _remoteSequence: 0
+  _remoteSceneName: 
+  _loadingPriority: 1
