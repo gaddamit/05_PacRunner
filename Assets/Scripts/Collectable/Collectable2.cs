@@ -4,14 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Collectable : MonoBehaviour
+[ExecuteInEditMode]
+public class Collectable2 : MonoBehaviour
 {
     public UnityEvent OnCollectableCollectedEvent;
     [SerializeField]
-    private AudioClip _collectableSound;
-    [SerializeField]
     protected CollectableSO _collectableSO;
     
+    private void Awake()
+    {
+        Debug.Log("OnEnable");
+        if (_collectableSO != null)
+        {
+            GameObject go = Instantiate(_collectableSO.collectablePrefab, transform.position, Quaternion.identity, transform);
+        }
+    }
     // Handle the collection of the collectable through trigger collision
     protected virtual void OnTriggerEnter(Collider other)
     {
@@ -25,6 +32,6 @@ public class Collectable : MonoBehaviour
 
     protected virtual void PlaySoundEffect()
     {
-        AudioManager.Instance.PlaySoundEffect(_collectableSound);
+        
     }
 }
