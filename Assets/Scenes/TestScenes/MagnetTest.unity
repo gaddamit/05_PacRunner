@@ -982,6 +982,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7456579592044954970, guid: 2cf6259cea6a84333aca69fde38cc141, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456579592044954970, guid: 2cf6259cea6a84333aca69fde38cc141, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456579592044954970, guid: 2cf6259cea6a84333aca69fde38cc141, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456579592044954970, guid: 2cf6259cea6a84333aca69fde38cc141, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1286,8 +1298,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreIntervals: 100
-  scoreText: {fileID: 1559263764}
+  _scoreText: {fileID: 0}
   player: {fileID: 492137046}
+  onGameOver:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
