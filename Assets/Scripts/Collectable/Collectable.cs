@@ -1,15 +1,13 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Events;
 
 [ExecuteInEditMode]
 public class Collectable : MonoBehaviour
 {
+    private GameObject _collectable;
     [SerializeField]
     protected CollectableSO _collectableSO;
-    private GameObject _collectable;
+    [SerializeField] private bool _shouldAnimate = false;
     private void Awake()
     {
         if (_collectableSO != null && transform.childCount == 0)
@@ -17,6 +15,15 @@ public class Collectable : MonoBehaviour
             _collectable = Instantiate(_collectableSO.collectablePrefab, transform.position, Quaternion.identity, transform);
         }
     }
+
+    private void Start()
+    {
+        if(_shouldAnimate)
+        {
+            transform.DOLocalMoveY(3f, 1f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine);
+        }
+    }
+
     // Handle the collection of the collectable through trigger collision
     protected virtual void OnTriggerEnter(Collider other)
     {
