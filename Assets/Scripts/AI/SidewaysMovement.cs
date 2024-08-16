@@ -2,16 +2,12 @@ using UnityEngine;
 using DG.Tweening;
 
 // This script is used to make an object move sideways
-public class SidewaysMovement : MonoBehaviour
+public class SidewaysMovement : Movement
 {
     [SerializeField]
     private bool _isMovingRight = true;
     [SerializeField]
     private float _xPosition = 3;
-    [SerializeField]
-    private float _speed = 2;
-    [SerializeField]
-    private bool _shouldDieOnCollision = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +15,7 @@ public class SidewaysMovement : MonoBehaviour
         // Move the ghost sideways
         float z = transform.localPosition.z;
         transform.DOLocalMove(new Vector3(_isMovingRight ? _xPosition : -_xPosition, 2, z), _speed).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
-
+        
         InvokeRepeating("RotateGhost", 0, _speed);
     }
 
@@ -35,18 +31,6 @@ public class SidewaysMovement : MonoBehaviour
         {
             transform.localRotation = Quaternion.Euler(0, -90, 0);
             _isMovingRight = true;
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player") && (other.GetType() == typeof(BoxCollider)))
-        {
-            Player player = other.GetComponent<Player>();
-            if(_shouldDieOnCollision)
-            {
-                player?.OnDeath();
-            }
         }
     }
 }
