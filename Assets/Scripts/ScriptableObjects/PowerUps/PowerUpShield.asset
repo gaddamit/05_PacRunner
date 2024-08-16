@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scoreValue: 0
   collectablePrefab: {fileID: 1449546702032472511, guid: 5415ce37534c1494f9da01f6f51f397f, type: 3}
-  onCollectSound: {fileID: 0}
+  onCollectSound: {fileID: 8300000, guid: 08cbbf890b7604a14b15d559014aa669, type: 3}
   _duration: 5
   _effectRadius: 1
   _visualEffect: {fileID: 1449546702032472511, guid: 5415ce37534c1494f9da01f6f51f397f, type: 3}
