@@ -25,11 +25,11 @@ public class Ghost : MonoBehaviour
             List<Material> mat = GetComponent<Renderer>().materials.ToList();
             mat[1].SetColor("_Color", _ghostSO.color);
             mat[1].SetColor("_EmissionColor", _ghostSO.color);
+            mat[1].SetFloat("_Metallic", 0.5f);
+            mat[1].SetFloat("_Glossiness", 0.7f);
 
             mat[2].SetColor("_Color", Color.black);
             mat[3].SetColor("_Color", Color.black);
-            mat[1].SetFloat("_Metallic", 0.5f);
-            mat[1].SetFloat("_Glossiness", 0.7f);
         }
     }
     
@@ -66,7 +66,6 @@ public class Ghost : MonoBehaviour
     {
         if (other.CompareTag("Player") && (other.GetType() == typeof(BoxCollider)))
         {
-            Debug.Log("Player collided with ghost");
             Player player = other.GetComponent<Player>();
             if(_ghostSO.shouldDieOnCollision)
             {
