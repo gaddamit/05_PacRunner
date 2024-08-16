@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2485028856878824123}
-  - component: {fileID: 4372087008051848667}
+  - component: {fileID: -151478993299866587}
+  - component: {fileID: 2975833845590948870}
   m_Layer: 0
   m_Name: Collectable
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4372087008051848667
+--- !u!114 &-151478993299866587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,10 +42,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 6763251968680932004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c7d6069c63ef426289cf69ef5794f25, type: 3}
+  m_Script: {fileID: 11500000, guid: b76d5a408ba9e4c308fd08ff0e9ebac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnCollectableCollectedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  _collectableSound: {fileID: 0}
+  _collectableSO: {fileID: 11400000, guid: 2c69ecf9b72704e5dad82c53958d84b6, type: 2}
+--- !u!135 &2975833845590948870
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6763251968680932004}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
