@@ -28,17 +28,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Object_color_0.000000-0.000000-0.000000.jpgMat
-    second: {fileID: 2100000, guid: 108b9df1734044c5995a10f8c3541c09, type: 2}
+    second: {fileID: 2100000, guid: 63fa7c6c739124c08894ad829b6ebac8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Object_color_0.081600-0.555280-0.464320.jpgMat
-    second: {fileID: 2100000, guid: 4b9db52d2ce814f2286783f99d18e5cc, type: 2}
+    second: {fileID: 2100000, guid: 63fa7c6c739124c08894ad829b6ebac8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Object_color_0.276080-0.555280-0.081600.jpgMat
-    second: {fileID: 2100000, guid: 9e82cb68a5deb4eb9b07422fe05407a7, type: 2}
+    second: {fileID: 2100000, guid: 63fa7c6c739124c08894ad829b6ebac8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
