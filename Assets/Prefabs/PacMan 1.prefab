@@ -115,6 +115,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 68d9a84d291314d63bba108d50e54454, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2948348679247682283}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 68d9a84d291314d63bba108d50e54454, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3377244683434032049}
   m_SourcePrefab: {fileID: 100100000, guid: 68d9a84d291314d63bba108d50e54454, type: 3}
 --- !u!1 &7795949814800457696 stripped
 GameObject:
@@ -272,8 +275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66d2e24ff084a898c7854b79b5c3e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  regularColor: {r: 0, g: 0, b: 0, a: 0}
-  boostColor: {r: 0, g: 0, b: 0, a: 0}
   _speedCap: 60
   _speedIncrement: 1
   onDeath:
@@ -282,3 +283,16 @@ MonoBehaviour:
   onGameOver:
     m_PersistentCalls:
       m_Calls: []
+  _deathSound: {fileID: 8300000, guid: 0405a266ba3f74567a0420f15c2e76de, type: 3}
+--- !u!114 &3377244683434032049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7795949814800457696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738f83e5c8f9a48eabe8afc7c83171c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
