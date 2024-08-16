@@ -1996,8 +1996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b5a36b04ab67c40838d5782c31138d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playButton: {fileID: 0}
-  _quitButton: {fileID: 0}
+  _playButton: {fileID: 999715972}
+  _quitButton: {fileID: 1622500901}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
