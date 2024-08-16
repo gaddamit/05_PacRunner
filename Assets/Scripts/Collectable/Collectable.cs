@@ -4,27 +4,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[ExecuteInEditMode]
 public class Collectable : MonoBehaviour
 {
-    public UnityEvent OnCollectableCollectedEvent;
-    [SerializeField]
-    private AudioClip _collectableSound;
     [SerializeField]
     protected CollectableSO _collectableSO;
-    
+    private GameObject _collectable;
+    private void Awake()
+    {
+        if (_collectableSO != null && transform.childCount == 0)
+        {
+            _collectable = Instantiate(_collectableSO.collectablePrefab, transform.position, Quaternion.identity, transform);
+        }
+    }
     // Handle the collection of the collectable through trigger collision
     protected virtual void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && (other.GetType() == typeof(BoxCollider)))
         {
-            OnCollectableCollectedEvent?.Invoke();
-            PlaySoundEffect();
+            _collectableSO.Collect(other.GetComponent<Player>());
             Destroy(gameObject);
         }
-    }
-
-    protected virtual void PlaySoundEffect()
-    {
-        AudioManager.Instance.PlaySoundEffect(_collectableSound);
     }
 }
