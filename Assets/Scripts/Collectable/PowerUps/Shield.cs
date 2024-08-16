@@ -8,7 +8,7 @@ public class Shield : PowerUpEffect
     {
         // Add sphere collider to player
         Player player = GetComponent<Player>();
-        player.IsInvincible = true;
+        player.IsInvulnerable = true;
     }
 
     protected override void InitializeVFX(GameObject visualEffect)
@@ -26,7 +26,7 @@ public class Shield : PowerUpEffect
     protected override void RemovePowerUp()
     {
         Player player = GetComponent<Player>();
-        player.IsInvincible = false;
+        player.IsInvulnerable = false;
         base.RemovePowerUp();
     }
 }

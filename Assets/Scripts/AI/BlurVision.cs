@@ -20,7 +20,7 @@ public class BlurVision : MonoBehaviour
         if (other.CompareTag("Player") && (other.GetType() == typeof(BoxCollider)))
         {
             Player player = other.GetComponent<Player>();
-            if(player.IsInvincible)
+            if(player.IsInvulnerable)
             {
                 return;
             }
