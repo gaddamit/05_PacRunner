@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public static Player instance;
     private Rigidbody _rigidBody;
     private bool _isJumping = false;
-    
     private bool _isDead = false;
     private Animator _animator;
     
@@ -27,6 +26,13 @@ public class Player : MonoBehaviour
     [SerializeField]
     private AudioClip _deathSound;
 
+    private int _score = 0;
+    private bool _isInvincible = false;
+    public bool IsInvincible {
+        get { return _isInvincible; }
+        set { _isInvincible = value; }
+    }
+    
     private void Awake()
     {
         _runner = GetComponent<LaneRunner>();
@@ -64,6 +70,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void AddScore(int score)
+    {
+        _score += score;
+    }
+
     public void SetSpeed(float speed)
     {
         this._speed = speed;
@@ -87,7 +98,7 @@ public class Player : MonoBehaviour
     // Called when the player dies
     public void OnDeath()
     {
-        if(_isDead)
+        if(_isDead || _isInvincible)
         {
             return;
         }
