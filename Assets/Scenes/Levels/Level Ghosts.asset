@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 084b3ccb74b9f0a47b8c5c809ac9ee7f, type: 3}
-  m_Name: Level Magnet
+  m_Name: Level Ghosts
   m_EditorClassIdentifier: 
   _enabled: 1
   _pathGenerator: {fileID: 0}
@@ -28,32 +28,32 @@ MonoBehaviour:
         _pool: 0
         _poolParent: {fileID: 0}
       - nested: 0
-        randomPickChance: 0.51111114
-        _prefab: {fileID: 7971326914115165083, guid: f59443adf2da941baab7f5f59c39531c, type: 3}
-        _segmentPool: []
-        _pool: 0
-        _poolParent: {fileID: 0}
-      - nested: 0
-        randomPickChance: 0.5333333
-        _prefab: {fileID: 7971326914115165083, guid: 7e1f82b2eb2ca4939aa21e1020cfd195, type: 3}
-        _segmentPool: []
-        _pool: 0
-        _poolParent: {fileID: 0}
-      - nested: 0
-        randomPickChance: 0.47777778
-        _prefab: {fileID: 7971326914115165083, guid: 875d48c16d60b4e4681f43fc7630e289, type: 3}
-        _segmentPool: []
-        _pool: 0
-        _poolParent: {fileID: 0}
-      - nested: 0
-        randomPickChance: 0.2888889
-        _prefab: {fileID: 7971326914115165083, guid: a9650b184efcd46a792e02f1a6e73af9, type: 3}
-        _segmentPool: []
-        _pool: 0
-        _poolParent: {fileID: 0}
-      - nested: 0
-        randomPickChance: 0
+        randomPickChance: 0.41111112
         _prefab: {fileID: 7971326914115165083, guid: 2febd4e25d8be468391665f6d5c02498, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.26666668
+        _prefab: {fileID: 7971326914115165083, guid: e98fe12a497094e1990921c3c73ed820, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.17777778
+        _prefab: {fileID: 7971326914115165083, guid: cc8641b3e16834bf9a27d398d740e9ab, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: 72e0058a8b92b4ec689fdd7b064db12c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111111
+        _prefab: {fileID: 7971326914115165083, guid: 7e8882fe0898e43078667914f3dad05c, type: 3}
         _segmentPool: []
         _pool: 0
         _poolParent: {fileID: 0}
@@ -79,32 +79,32 @@ MonoBehaviour:
         _pool: 0
         _poolParent: {fileID: 0}
       - nested: 0
-        randomPickChance: 0.51111114
-        _prefab: {fileID: 7971326914115165083, guid: f59443adf2da941baab7f5f59c39531c, type: 3}
-        _segmentPool: []
-        _pool: 0
-        _poolParent: {fileID: 0}
-      - nested: 0
-        randomPickChance: 0.5333333
-        _prefab: {fileID: 7971326914115165083, guid: 7e1f82b2eb2ca4939aa21e1020cfd195, type: 3}
-        _segmentPool: []
-        _pool: 0
-        _poolParent: {fileID: 0}
-      - nested: 0
-        randomPickChance: 0.47777778
-        _prefab: {fileID: 7971326914115165083, guid: 875d48c16d60b4e4681f43fc7630e289, type: 3}
-        _segmentPool: []
-        _pool: 0
-        _poolParent: {fileID: 0}
-      - nested: 0
-        randomPickChance: 0.2888889
-        _prefab: {fileID: 7971326914115165083, guid: a9650b184efcd46a792e02f1a6e73af9, type: 3}
-        _segmentPool: []
-        _pool: 0
-        _poolParent: {fileID: 0}
-      - nested: 0
-        randomPickChance: 0
+        randomPickChance: 0.41111112
         _prefab: {fileID: 7971326914115165083, guid: 2febd4e25d8be468391665f6d5c02498, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.26666668
+        _prefab: {fileID: 7971326914115165083, guid: e98fe12a497094e1990921c3c73ed820, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.17777778
+        _prefab: {fileID: 7971326914115165083, guid: cc8641b3e16834bf9a27d398d740e9ab, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.22222222
+        _prefab: {fileID: 7971326914115165083, guid: 72e0058a8b92b4ec689fdd7b064db12c, type: 3}
+        _segmentPool: []
+        _pool: 0
+        _poolParent: {fileID: 0}
+      - nested: 0
+        randomPickChance: 0.21111111
+        _prefab: {fileID: 7971326914115165083, guid: 7e8882fe0898e43078667914f3dad05c, type: 3}
         _segmentPool: []
         _pool: 0
         _poolParent: {fileID: 0}
