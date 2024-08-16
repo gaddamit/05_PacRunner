@@ -1143,10 +1143,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 617198340}
     m_Modifications:
     - target: {fileID: 2948348679247682283, guid: 2cf6259cea6a84333aca69fde38cc141, type: 3}
-      propertyPath: _deathSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 0405a266ba3f74567a0420f15c2e76de, type: 3}
-    - target: {fileID: 2948348679247682283, guid: 2cf6259cea6a84333aca69fde38cc141, type: 3}
       propertyPath: onGameOver.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
