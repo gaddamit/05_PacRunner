@@ -13,7 +13,11 @@ public class Player : MonoBehaviour
     
     [Header("Speed Settings")]
     private float _speed = 0f;
-    private float _startSpeed = 0f;
+    [SerializeField]
+    private float _startSpeed = 30f;
+    public float StartSpeed {
+        get { return _startSpeed; }
+    }
     [SerializeField]
     private float _speedCap = 50;
     [SerializeField]
@@ -26,17 +30,17 @@ public class Player : MonoBehaviour
     [SerializeField]
     private AudioClip _deathSound;
 
-    private int _score = 0;
-    private bool _isInvincible = false;
-    public bool IsInvincible {
-        get { return _isInvincible; }
-        set { _isInvincible = value; }
+    private bool _allowControls = false;
+    private bool _isInvulnerable = false;
+    public bool IsInvulnerable {
+        get { return _isInvulnerable; }
+        set { _isInvulnerable = value; }
     }
     
     private void Awake()
     {
         _runner = GetComponent<LaneRunner>();
-        _startSpeed = _speed = _runner.followSpeed;
+        _speed = _startSpeed;
         instance = this;
 
         _rigidBody = GetComponent<Rigidbody>();
@@ -57,8 +61,11 @@ public class Player : MonoBehaviour
         }
 
         // Lane switching logic
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) _runner.lane--;
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) _runner.lane++;
+        if(_allowControls)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) _runner.lane--;
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) _runner.lane++;
+        }
     }
 
     private void FixedUpdate()
@@ -68,11 +75,6 @@ public class Player : MonoBehaviour
             _rigidBody.AddForce(Vector3.up * 10, ForceMode.Impulse);
             _isJumping = false;
         }
-    }
-
-    public void AddScore(int score)
-    {
-        _score += score;
     }
 
     public void SetSpeed(float speed)
@@ -98,7 +100,7 @@ public class Player : MonoBehaviour
     // Called when the player dies
     public void OnDeath()
     {
-        if(_isDead || _isInvincible)
+        if(_isDead || _isInvulnerable)
         {
             return;
         }
@@ -115,6 +117,12 @@ public class Player : MonoBehaviour
     public void GameOver()
     {
         GameManager.Instance.GameOver();
+    }
+
+    public void StartRunning()
+    {
+        _animator.SetTrigger("Run");
+        _allowControls = true;
     }
 
     // Play the death animation and sound
