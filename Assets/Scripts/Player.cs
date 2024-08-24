@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     private AudioClip _deathSound;
 
     private bool _allowControls = false;
+    [SerializeField]
     private bool _isInvulnerable = false;
     public bool IsInvulnerable {
         get { return _isInvulnerable; }

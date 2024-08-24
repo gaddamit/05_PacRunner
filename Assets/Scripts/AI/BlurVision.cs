@@ -6,7 +6,7 @@ public class BlurVision : MonoBehaviour
     [SerializeField]
     private float _blurDuration = 5.0f;
     [SerializeField]
-    private Color _blurColor = new Color(1/219f, 0, 1/219f, 0.5f);
+    private Color _blurColor = new Color(1/219f, 0, 1/219f, 1f);
     private GameObject _blurVision;
 
     private void Awake()

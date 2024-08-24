@@ -17,7 +17,7 @@ public class PowerUpSO : CollectableSO, IPowerUp
         ApplyEffect(collector);
     }
 
-    public virtual void ApplyEffect(Player collector)
+    public void ApplyEffect(Player collector)
     {
         DynamicScriptAttacher attacher = collector.GetComponent<DynamicScriptAttacher>();
         if (attacher != null && collector != null)

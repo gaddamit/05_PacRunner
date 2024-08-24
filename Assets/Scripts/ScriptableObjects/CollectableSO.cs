@@ -9,10 +9,6 @@ public class CollectableSO : ScriptableObject
     private int _scoreValue = 10;
     public GameObject collectablePrefab;
     public AudioClip onCollectSound;
-    
-    private void Awake()
-    {
-    }
 
     public virtual void Collect(Player collector)
     {
