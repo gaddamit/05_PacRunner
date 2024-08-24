@@ -1,14 +1,20 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using TMPro;
 
 // Handle the pause menu functionality
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField]
+    private HighscoreRanking highscoreRanking;
     private Vector3 _initialPosition;
     [SerializeField]
     private GameObject _pauseMenu; 
-
+    [SerializeField]
+    private TMP_Text _scoreText;
+    [SerializeField]
+    private TMP_Text _highscoreText;
     private void Awake()
     {
         _initialPosition = gameObject.GetComponent<RectTransform>().localPosition;
@@ -59,5 +65,25 @@ public class PauseMenu : MonoBehaviour
     private void HidePauseMenu()
     {
         gameObject.GetComponent<RectTransform>().localPosition = _initialPosition;
+    }
+
+    public void UpdateHighscores(int score)
+    {
+        highscoreRanking.AddScore(score);
+        _scoreText.text = "";
+        _highscoreText.text = "";
+        Debug.Log(highscoreRanking.index);
+        for(int i = 0; i < highscoreRanking.highscores.Count; i++)
+        {
+            _scoreText.text += $"{highscoreRanking.highscores[i]}\n";
+            if(i == highscoreRanking.index)
+            {
+                _highscoreText.text += $"{score}\n";
+            }
+            else
+            {
+                _highscoreText.text += "\n";
+            }
+        }
     }
 }
