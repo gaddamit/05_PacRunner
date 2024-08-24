@@ -17,12 +17,14 @@ public class IntroSequence : MonoBehaviour
     {
         // Disable the camera follow script first
         // Animate the camera to the starting position
+        _audioSource.Play();
         Vector3 targetPosition = new Vector3(0, _cameraFollow.cameraHeight, _cameraFollow.cameraDistance);
         _camera.transform.DOMove(targetPosition, 2).SetEase(Ease.OutCirc).OnComplete(() =>
         {
-            _audioSource.Play();
-            Invoke("StartRunning", _audioSource.clip.length);
+            
         });
+        
+        Invoke("StartRunning", _audioSource.clip.length);
     }
 
     // Start the runner and enable the camera follow script
