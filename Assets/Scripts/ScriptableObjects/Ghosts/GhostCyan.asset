@@ -15,7 +15,7 @@ MonoBehaviour:
   movementTime: 1
   scale: 1
   color: {r: 0, g: 0.6120236, b: 0.6698113, a: 1}
-  material: {fileID: 0}
+  material: {fileID: 2100000, guid: 358d506f36bd84ee8a682e61f240225b, type: 2}
   movement: RandomJumping
   skill: 
   shouldDieOnCollision: 1

@@ -9,30 +9,10 @@ public class Ghost : MonoBehaviour
     [SerializeField] private GhostSO _ghostSO;
     private void Awake()
     {
-        if (_ghostSO != null)
-        {
-            InitializeColor();
-            InitializeMovement();
-            InitializeSkill();
-        }
+        InitializeMovement();
+        InitializeSkill();
     }
-    
-    protected virtual void InitializeColor()
-    {
-        Renderer renderer = gameObject.GetComponent<Renderer>();
-        if(renderer != null)
-        {
-            List<Material> mat = GetComponent<Renderer>().materials.ToList();
-            mat[1].SetColor("_Color", _ghostSO.color);
-            mat[1].SetColor("_EmissionColor", _ghostSO.color);
-            mat[1].SetFloat("_Metallic", 0.5f);
-            mat[1].SetFloat("_Glossiness", 0.7f);
 
-            mat[2].SetColor("_Color", Color.black);
-            mat[3].SetColor("_Color", Color.black);
-        }
-    }
-    
     protected virtual void InitializeMovement()
     {
         DynamicScriptAttacher attacher = gameObject.GetComponent<DynamicScriptAttacher>();

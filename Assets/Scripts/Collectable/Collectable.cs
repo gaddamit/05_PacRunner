@@ -8,7 +8,7 @@ public class Collectable : MonoBehaviour
     [SerializeField]
     protected CollectableSO _collectableSO;
     [SerializeField] private bool _shouldAnimate = false;
-    private void Awake()
+    protected virtual void Awake()
     {
         if (_collectableSO != null && transform.childCount == 0)
         {
@@ -30,7 +30,7 @@ public class Collectable : MonoBehaviour
         if (other.CompareTag("Player") && (other.GetType() == typeof(BoxCollider)))
         {
             _collectableSO.Collect(other.GetComponent<Player>());
-            Destroy(gameObject);
+            gameObject.SetActive(false); 
         }
     }
 }

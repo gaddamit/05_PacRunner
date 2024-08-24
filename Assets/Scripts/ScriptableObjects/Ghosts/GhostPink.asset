@@ -15,7 +15,7 @@ MonoBehaviour:
   movementTime: 2
   scale: 1
   color: {r: 1, g: 0, b: 0.7882353, a: 0}
-  material: {fileID: 0}
+  material: {fileID: 2100000, guid: 358d506f36bd84ee8a682e61f240225b, type: 2}
   movement: SidewaysMovement
   skill: BlurVision
   shouldDieOnCollision: 0
