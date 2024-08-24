@@ -69,9 +69,7 @@ public class GameManager : Singleton<GameManager>
         {
             _diedMenu = playerDied.GetComponent<PauseMenu>();
             _diedMenu.Pause();
-
-            TMP_Text score = GameObject.Find("PlayerDied/Score").GetComponent<TMP_Text>();
-            score.text = _score.ToString();
+            _diedMenu.UpdateHighscores(_score);
         }
     }   
 }
